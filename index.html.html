@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <style>
+        #container{
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            padding: 60px 50px;
+            margin: 100px auto;
+        }
+    </style>
+    <script>
+        function gm(){
+            var gmRef = document.getElementById('heading')
+                gmRef.innerText = 'Good Morning Rahber'
+                gmRef.style.color = "green";
+        }
+        function ge(){
+            var geRef = document.getElementById('heading')
+                geRef.innerText = 'Good Evening Rahber'
+                geRef.style.color = "brown";
+                
+        }
+        function gn(){
+            var gnRef = document.getElementById('heading')
+                gnRef.innerText = 'Good Night Rahber'
+                gnRef.style.color = "grey";
+        }
+        
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h2 id="heading">Hello Rahber</h2>
+        <button id="gm" onclick="gm()">Good Morning</button>
+        <button id="ge" onclick="ge()">Good Evening</button>
+        <button id="gn" onclick="gn()">Good Night</button>
+    </div>
+</body>
+
+</html>
